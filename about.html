@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>About Us | RezeTech Store</title>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f8f7fc;
+        color: #222;
+    }
+
+    /* =========================
+       TOP BAR
+    ========================= */
+
+    .top-bar {
+        background: #17132b;
+        color: #dcd7ff;
+        font-size: 13px;
+        padding: 8px 0;
+    }
+
+    .top-bar span:last-child {
+        color: #a9a0ff;
+    }
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .main-navbar {
+        background: #ffffff;
+        padding: 14px 0;
+        border-bottom: 1px solid #e9e7f2;
+        box-shadow: 0 4px 18px rgba(31, 20, 65, 0.08);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .rezetech-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: #21163f !important;
+        min-width: 175px;
+    }
+
+    .logo-icon {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #5b3b8a, #7c4dff);
+        color: #fff;
+        font-size: 24px;
+        font-weight: 800;
+        box-shadow: 0 5px 15px rgba(91, 59, 138, 0.30);
+    }
+
+    .rezetech-logo strong {
+        display: block;
+        font-size: 21px;
+        font-weight: 800;
+    }
+
+    .rezetech-logo small {
+        display: block;
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #7c4dff;
+    }
+
+    .navbar-nav {
+        gap: 5px;
+    }
+
+    .navbar-nav .nav-link {
+        color: #4c465b !important;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px 13px !important;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .navbar-nav .nav-link i {
+        margin-right: 5px;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #6c42d8 !important;
+        background: #f4f0ff;
+    }
+
+    .navbar-nav .nav-link.active {
+        color: #6c42d8 !important;
+        background: #f1ecff;
+    }
+
+    /* =========================
+       SEARCH
+    ========================= */
+
+    .search-box {
+        width: 300px;
+        height: 43px;
+        background: #f7f6fa;
+        border: 1px solid #e4e1ec;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-right: 15px;
+    }
+
+    .search-box input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 0 13px;
+        font-size: 13px;
+    }
+
+    .search-box button {
+        width: 48px;
+        border: none;
+        background: #6c42d8;
+        color: #fff;
+    }
+
+    .search-box button:hover {
+        background: #4e2a9e;
+    }
+
+    /* =========================
+       HEADER ACTIONS
+    ========================= */
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .header-action {
+        position: relative;
+        min-width: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        text-decoration: none;
+        color: #494356;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 5px 8px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .header-action i {
+        font-size: 19px;
+    }
+
+    .header-action:hover {
+        color: #6c42d8;
+        background: #f4f0ff;
+    }
+
+    .cart-action b {
+        position: absolute;
+        top: 0;
+        right: 7px;
+        width: 17px;
+        height: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #ff3b6b;
+        color: #fff;
+        font-size: 9px;
+    }
+
+    /* =========================
+       ABOUT HERO
+    ========================= */
+
+    .about-hero {
+        min-height: 390px;
+        background:
+            linear-gradient(
+                90deg,
+                rgba(23, 19, 43, 0.97),
+                rgba(48, 30, 91, 0.90)
+            ),
+            url("images (1).jpg");
+
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        color: white;
+
+        padding: 70px 20px;
+    }
+
+    .about-hero-content {
+        max-width: 800px;
+    }
+
+    .about-badge {
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 30px;
+        background: rgba(124, 77, 255, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #dcd0ff;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 18px;
+    }
+
+    .about-hero h1 {
+        font-size: clamp(38px, 6vw, 65px);
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+
+    .about-hero h1 span {
+        color: #a987ff;
+    }
+
+    .about-hero p {
+        color: #ddd8e8;
+        font-size: 16px;
+        line-height: 1.8;
+        max-width: 680px;
+        margin: auto;
+    }
+
+    /* =========================
+       COMMON SECTION
+    ========================= */
+
+    .about-section {
+        padding: 70px 0;
+    }
+
+    .section-label {
+        color: #7c4dff;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    .section-title {
+        font-size: 34px;
+        font-weight: 800;
+        color: #21163f;
+        margin-bottom: 18px;
+    }
+
+    .section-text {
+        color: #666;
+        line-height: 1.8;
+        font-size: 15px;
+    }
+
+    /* =========================
+       STORY
+    ========================= */
+
+    .story-image {
+        width: 100%;
+        height: 390px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(33, 22, 63, 0.15);
+    }
+
+    .story-box {
+        padding: 20px;
+    }
+
+    .story-feature {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 22px;
+    }
+
+    .story-feature-icon {
+        width: 45px;
+        height: 45px;
+        border-radius: 12px;
+        background: #f1ecff;
+        color: #6c42d8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .story-feature strong {
+        display: block;
+        color: #21163f;
+    }
+
+    .story-feature span {
+        color: #777;
+        font-size: 13px;
+    }
+
+    /* =========================
+       MISSION
+    ========================= */
+
+    .mission-section {
+        background: #17132b;
+        color: white;
+    }
+
+    .mission-section .section-title {
+        color: white;
+    }
+
+    .mission-section .section-text {
+        color: #c6c1d1;
+    }
+
+    .mission-card {
+        height: 100%;
+        padding: 30px;
+        border-radius: 16px;
+        background: #211c38;
+        border: 1px solid rgba(255,255,255,0.08);
+        transition: 0.3s;
+    }
+
+    .mission-card:hover {
+        transform: translateY(-7px);
+        background: #272044;
+    }
+
+    .mission-icon {
+        width: 58px;
+        height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #7c4dff;
+        border-radius: 15px;
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .mission-card h4 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .mission-card p {
+        color: #bdb8ca;
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    /* =========================
+       WHY CHOOSE US
+    ========================= */
+
+    .why-card {
+        background: #fff;
+        border: 1px solid #e8e5f0;
+        border-radius: 15px;
+        padding: 30px 22px;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .why-card:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 12px 30px rgba(33,22,63,0.10);
+    }
+
+    .why-icon {
+        width: 65px;
+        height: 65px;
+        margin: auto auto 18px;
+        border-radius: 50%;
+        background: #f1ecff;
+        color: #6c42d8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+    }
+
+    .why-card h5 {
+        color: #21163f;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .why-card p {
+        color: #777;
+        font-size: 13px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .stats-section {
+        background: linear-gradient(135deg, #5b3b8a, #7c4dff);
+        color: white;
+        padding: 50px 0;
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .stat-item i {
+        font-size: 28px;
+        margin-bottom: 12px;
+        color: #ddd2ff;
+    }
+
+    .stat-item h2 {
+        font-size: 34px;
+        font-weight: 800;
+        margin-bottom: 4px;
+    }
+
+    .stat-item p {
+        margin: 0;
+        color: #eee8ff;
+        font-size: 13px;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .about-cta {
+        padding: 70px 20px;
+        text-align: center;
+        background: #f8f7fc;
+    }
+
+    .cta-box {
+        max-width: 900px;
+        margin: auto;
+        background: #fff;
+        border-radius: 22px;
+        padding: 55px 25px;
+        box-shadow: 0 12px 40px rgba(33,22,63,0.10);
+        border: 1px solid #e9e5f2;
+    }
+
+    .cta-box h2 {
+        color: #21163f;
+        font-weight: 800;
+        font-size: 35px;
+        margin-bottom: 12px;
+    }
+
+    .cta-box p {
+        color: #777;
+        margin-bottom: 25px;
+    }
+
+    .cta-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        background: #7c4dff;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 9px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+        background: #5b3b8a;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .store-footer {
+        background: #111827;
+        color: white;
+    }
+
+    .footer-title {
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .footer-title i {
+        color: #ffc107;
+        margin-right: 8px;
+    }
+
+    .footer-text {
+        color: #b9c0cc;
+        line-height: 1.8;
+    }
+
+    .footer-heading {
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 11px;
+    }
+
+    .footer-links a {
+        text-decoration: none;
+        color: #b9c0cc;
+        transition: 0.3s;
+    }
+
+    .footer-links a:hover {
+        color: #ffc107;
+        padding-left: 6px;
+    }
+
+    .contact-info {
+        list-style: none;
+        padding: 0;
+    }
+
+    .contact-info li {
+        color: #b9c0cc;
+        margin-bottom: 15px;
+    }
+
+    .contact-info i {
+        color: #ffc107;
+        width: 25px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #1f2937;
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+        background: #ffc107;
+        color: #111827;
+        transform: translateY(-4px);
+    }
+
+    .copyright {
+        padding: 18px 0;
+        background: #0b1120;
+        color: #9ca3af;
+    }
+
+    .copyright a {
+        color: #9ca3af;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    .copyright a:hover {
+        color: #ffc107;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 1199px) {
+        .search-box {
+            width: 230px;
+        }
+
+        .navbar-nav .nav-link {
+            padding: 9px 8px !important;
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        .navbar-collapse {
+            padding-top: 15px;
+        }
+
+        .search-box {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .header-actions {
+            justify-content: flex-start;
+            margin-top: 8px;
+        }
+
+        .header-action {
+            flex-direction: row;
+            gap: 7px;
+        }
+
+        .cart-action b {
+            right: auto;
+            left: 18px;
+        }
+
+        .top-bar span:last-child {
+            display: none;
+        }
+
+        .story-box {
+            padding: 25px 0 0;
+        }
+    }
+
+    @media (max-width: 576px) {
+
+        .top-bar {
+            text-align: center;
+            font-size: 11px;
+        }
+
+        .rezetech-logo strong {
+            font-size: 18px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            font-size: 21px;
+        }
+
+        .about-hero {
+            min-height: 330px;
+            padding: 50px 15px;
+        }
+
+        .about-hero h1 {
+            font-size: 36px;
+        }
+
+        .about-hero p {
+            font-size: 13px;
+        }
+
+        .about-section {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            font-size: 28px;
+        }
+
+        .story-image {
+            height: 280px;
+        }
+
+        .stat-item h2 {
+            font-size: 27px;
+        }
+
+        .cta-box h2 {
+            font-size: 28px;
+        }
+
+        .copyright {
+            text-align: center;
+        }
+
+        .copyright .text-md-end {
+            text-align: center !important;
+            margin-top: 10px;
+        }
+
+        .copyright a {
+            margin: 0 7px;
+        }
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <span>
+                🚚 Free Delivery on Orders Above ₹999
+            </span>
+
+            <span>
+                ⚡ Latest Tech • Best Prices • Trusted Store
+            </span>
+
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand rezetech-logo" href="home.html">
+
+                <span class="logo-icon">R</span>
+
+                <span>
+                    <strong>RezeTech</strong>
+                    <small>STORE</small>
+                </span>
+
+            </a>
+
+            <!-- MOBILE BUTTON -->
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#rezetechNavbar">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- NAVIGATION -->
+            <div class="collapse navbar-collapse" id="rezetechNavbar">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="laptop.html">
+                            <i class="fa-solid fa-laptop"></i>
+                            Laptops
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="mobile.html">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            Mobiles
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gadgets.html">
+                            <i class="fa-solid fa-headphones"></i>
+                            Gadgets
+                        </a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="#"> <i class="fa-solid fa-tags"></i> Offers </a>
+                        </li>
+
+                </ul>
+
+                <!-- SEARCH -->
+                <form class="search-box d-flex">
+
+                    <input type="search"
+                        placeholder="Search laptops, mobiles, gadgets...">
+
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                </form>
+
+                <!-- ACTIONS -->
+                <div class="header-actions">
+
+                    <a href="#" class="header-action">
+
+                        <i class="fa-regular fa-user"></i>
+
+                        <span>Account</span>
+
+                    </a>
+
+                    <a href="cart.html"
+                        class="header-action cart-action">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        <span>Cart</span>
+
+                        <b>0</b>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     ABOUT HERO
+========================= -->
+
+<section class="about-hero">
+
+    <div class="about-hero-content">
+
+        <span class="about-badge">
+            <i class="fa-solid fa-store"></i>
+            ABOUT REZETECH
+        </span>
+
+        <h1>
+            Technology Made
+            <span>Simple.</span>
+        </h1>
+
+        <p>
+            Welcome to RezeTech Store — your trusted destination
+            for laptops, smartphones, gadgets and accessories.
+            We bring the latest technology together with
+            competitive prices and a smooth shopping experience.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     OUR STORY
+========================= -->
+
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!-- IMAGE -->
+            <div class="col-lg-6">
+
+                <img src="src/image/reze-tech store.png"
+                    alt="RezeTech Technology Store"
+                    class="story-image">
+
+            </div>
+
+            <!-- CONTENT -->
+            <div class="col-lg-6">
+
+                <div class="story-box">
+
+                    <div class="section-label">
+                        Our Story
+                    </div>
+
+                    <h2 class="section-title">
+                        Your Trusted Tech Store
+                    </h2>
+
+                    <p class="section-text">
+                        RezeTech Store was created with a simple goal:
+                        to make modern technology easier and more
+                        accessible for everyone.
+                    </p>
+
+                    <p class="section-text">
+                        From powerful laptops and smartphones to
+                        headphones, smart watches, gaming accessories
+                        and everyday tech products, we carefully
+                        bring together products that offer excellent
+                        performance and value.
+                    </p>
+
+                    <p class="section-text">
+                        Whether you are a student, professional,
+                        gamer or technology enthusiast, RezeTech
+                        helps you find the right product for your
+                        digital lifestyle.
+                    </p>
+
+                    <!-- FEATURES -->
+
+                    <div class="story-feature">
+
+                        <div class="story-feature-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div>
+                            <strong>Trusted Products</strong>
+                            <span>Quality technology from popular brands</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="story-feature">
+
+                        <div class="story-feature-icon">
+                            <i class="fa-solid fa-tags"></i>
+                        </div>
+
+                        <div>
+                            <strong>Best Value</strong>
+                            <span>Competitive prices and exciting deals</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="story-feature">
+
+                        <div class="story-feature-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+
+                        <div>
+                            <strong>Customer Support</strong>
+                            <span>Friendly support whenever you need it</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MISSION & VISION
+========================= -->
+
+<section class="about-section mission-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <div class="section-label">
+                What Drives Us
+            </div>
+
+            <h2 class="section-title">
+                Our Mission & Vision
+            </h2>
+
+            <p class="section-text mx-auto"
+                style="max-width:700px;">
+
+                We want to create a technology shopping experience
+                that is reliable, simple and accessible to everyone.
+
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- MISSION -->
+            <div class="col-md-6">
+
+                <div class="mission-card">
+
+                    <div class="mission-icon">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+
+                    <h4>Our Mission</h4>
+
+                    <p>
+                        To provide customers with quality technology
+                        products at competitive prices while making
+                        online shopping simple, convenient and
+                        trustworthy.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- VISION -->
+            <div class="col-md-6">
+
+                <div class="mission-card">
+
+                    <div class="mission-icon">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+
+                    <h4>Our Vision</h4>
+
+                    <p>
+                        To become a trusted technology destination
+                        where customers can discover, compare and
+                        purchase the latest digital products with
+                        confidence.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <div class="section-label">
+                Why RezeTech?
+            </div>
+
+            <h2 class="section-title">
+                Why Choose Us?
+            </h2>
+
+            <p class="section-text mx-auto"
+                style="max-width:650px;">
+
+                Everything you need for a better technology
+                shopping experience.
+
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+
+                    <h5>Latest Technology</h5>
+
+                    <p>
+                        Discover the latest laptops,
+                        smartphones and gadgets.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+
+                    <h5>Great Prices</h5>
+
+                    <p>
+                        Enjoy competitive prices and
+                        attractive technology deals.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+
+                    <h5>Fast Delivery</h5>
+
+                    <p>
+                        Get your technology products
+                        delivered quickly and safely.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <h5>Customer Support</h5>
+
+                    <p>
+                        Our support team is here to help
+                        whenever you need us.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================= -->
+
+<section class="stats-section">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-6 col-lg-3">
+
+                <div class="stat-item">
+
+                    <i class="fa-solid fa-box-open"></i>
+
+                    <h2>500+</h2>
+
+                    <p>Products</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="stat-item">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <h2>10K+</h2>
+
+                    <p>Happy Customers</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="stat-item">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <h2>4.8</h2>
+
+                    <p>Average Rating</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="stat-item">
+
+                    <i class="fa-solid fa-truck"></i>
+
+                    <h2>24/7</h2>
+
+                    <p>Online Support</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="about-cta">
+
+    <div class="cta-box">
+
+        <h2>
+            Ready to Upgrade Your Tech?
+        </h2>
+
+        <p>
+            Explore our collection of laptops, mobiles,
+            gadgets and accessories.
+        </p>
+
+        <a href="home.html" class="cta-btn">
+
+            Shop Now
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="store-footer">
+
+    <div class="container py-5">
+
+        <div class="row g-4">
+
+            <!-- COMPANY -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <h4 class="footer-title">
+
+                    <i class="fa-solid fa-laptop"></i>
+                    REZE TechStore
+
+                </h4>
+
+                <p class="footer-text">
+
+                    Your trusted destination for laptops,
+                    mobiles, accessories and the latest
+                    technology gadgets.
+
+                </p>
+
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5 class="footer-heading">
+                    Quick Links
+                </h5>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="home.html">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="cart.html">Cart</a>
+                    </li>
+
+                    <li>
+                        <a href="signin.html">Sign In</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CATEGORIES -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <h5 class="footer-heading">
+                    Categories
+                </h5>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="laptop.html">Laptops</a>
+                    </li>
+
+                    <li>
+                        <a href="mobile.html">Mobiles</a>
+                    </li>
+
+                    <li>
+                        <a href="gadgets.html">Accessories</a>
+                    </li>
+
+                    <li>
+                        <a href="gadgets.html">Gadgets</a>
+                    </li>
+
+                    <li>
+                        <a href="#">New Arrivals</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <h5 class="footer-heading">
+                    Contact Us
+                </h5>
+
+                <ul class="contact-info">
+
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Chennai, Tamil Nadu, India
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 89395 86837
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        support@techstore.com
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+
+    <div class="copyright">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+
+                    <p class="mb-0">
+
+                        © 2026
+                        <strong>REZE TechStore</strong>.
+                        All Rights Reserved.
+
+                    </p>
+
+                </div>
+
+                <div class="col-md-6 text-md-end">
+
+                    <a href="#">Privacy Policy</a>
+
+                    <a href="#">Terms & Conditions</a>
+
+                    <a href="#">Help</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+```
+
+</body>
+
+</html>
